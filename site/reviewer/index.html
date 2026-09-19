@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="GoLisDo WebPlayerControl review instructions for Chrome Web Store reviewers.">
+  <title>GoLisDo WebPlayerControl — Reviewer Access</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="../"><span class="mark">G</span><span>GoLisDo</span></a>
+    <div class="navlinks">
+      <a href="../privacy/">Privacy</a>
+    </div>
+  </nav>
+</header>
+
+<main class="policy wrap">
+  <article>
+    <div class="kicker">Chrome Web Store review</div>
+    <h1>GoLisDo WebPlayerControl — test access</h1>
+    <div class="meta">Reviewer build: GoLisDo 0.6.6 · Extension 0.1.53</div>
+
+    <p>This page provides the Windows companion app and the steps required to test the main functionality of the GoLisDo WebPlayerControl Chrome extension.</p>
+
+    <div class="notice">
+      The extension is a companion to the GoLisDo Windows app. Full testing requires the Windows app to be installed because the extension communicates locally with it through Chrome Native Messaging.
+    </div>
+
+    <h2>1. Download the Windows reviewer build</h2>
+    <p>
+      <a class="btn primary" href="https://github.com/Videljr/golisdo-site/releases/download/reviewer-0.6.6/GoLisDo-Setup-x64.exe">
+        Download GoLisDo 0.6.6 for review
+      </a>
+    </p>
+    <p><strong>File:</strong> <code>GoLisDo-Setup-x64.exe</code></p>
+    <p><strong>SHA-256:</strong> <code>A583A51EA5ED3E2B79DF0F1DB036CD75A06E1A970BC6DC95F384503358B2E1D6</code></p>
+
+    <h2>2. Install GoLisDo</h2>
+    <ol>
+      <li>Run <code>GoLisDo-Setup-x64.exe</code>.</li>
+      <li>Complete the installer using the default options.</li>
+      <li>Launch GoLisDo after installation.</li>
+    </ol>
+    <p>The installer registers the Native Messaging host required by the browser extension.</p>
+
+    <h2>3. Install the extension under review</h2>
+    <p>Install the submitted GoLisDo WebPlayerControl build through the Chrome Web Store review environment. No GoLisDo account, username or password is required.</p>
+
+    <h2>4. Test the connection</h2>
+    <ol>
+      <li>Open the extension popup.</li>
+      <li>With GoLisDo running, the popup should report that it is connected to GoLisDo.</li>
+      <li>Open one of the supported web players: YouTube Music, YouTube, Spotify Web or Deezer Web.</li>
+      <li>Start media playback.</li>
+      <li>GoLisDo should display the current media metadata and playback state.</li>
+    </ol>
+
+    <h2>5. Test media controls</h2>
+    <p>From GoLisDo, test the controls supported by the active provider, such as:</p>
+    <ul>
+      <li>play and pause;</li>
+      <li>previous and next track;</li>
+      <li>volume and mute;</li>
+      <li>playback position when supported;</li>
+      <li>the “Up next” queue and queue selection when supported by the provider.</li>
+    </ul>
+
+    <h2>6. Supported origins</h2>
+    <ul>
+      <li><code>https://music.youtube.com/*</code></li>
+      <li><code>https://www.youtube.com/*</code></li>
+      <li><code>https://open.spotify.com/*</code></li>
+      <li><code>https://www.deezer.com/*</code></li>
+    </ul>
+
+    <h2>7. Data and network behavior</h2>
+    <p>The extension communicates with the GoLisDo Windows companion app locally through Chrome Native Messaging. The extension does not require a GoLisDo backend account and does not send playback metadata to a developer-operated backend.</p>
+
+    <h2>8. Privacy policy</h2>
+    <p><a href="../privacy/">GoLisDo WebPlayerControl Privacy Policy</a></p>
+
+    <h2>9. Reviewer support</h2>
+    <p>If the reviewer encounters an installation or connectivity issue, use the public support channel at <a href="https://github.com/Videljr/golisdo-site/issues">GitHub Issues</a>.</p>
+  </article>
+</main>
+
+<footer><div class="wrap">© 2026 GoLisDo · Reviewer access page</div></footer>
+</body>
+</html>
